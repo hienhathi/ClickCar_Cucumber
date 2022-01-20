@@ -38,6 +38,7 @@ public class DriverFactory {
 			options.addArguments("--headless");
 	        options.addArguments("window-size=1366,768");
 			options.addArguments("--disable-gpu");
+			options.addArguments("enable-features=NetworkServiceInProcess");
 			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 			WebDriverManager.chromedriver().forceDownload().setup();
 	        tlDriver.set(new ChromeDriver(options));
@@ -46,7 +47,7 @@ public class DriverFactory {
 			FirefoxOptions options = new FirefoxOptions();
 			options.addArguments("--headless");
 	        options.addArguments("window-size=1366,768");
-			options.addArguments("--disable-gpu");
+			options.addArguments("--disable-gpu");			
 			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);			
 			WebDriverManager.firefoxdriver().setup();
 	        tlDriver.set(new FirefoxDriver(options));

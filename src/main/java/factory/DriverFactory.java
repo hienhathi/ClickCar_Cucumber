@@ -1,6 +1,8 @@
 package factory;
 
 import java.time.Duration;
+
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -34,22 +36,40 @@ public class DriverFactory {
 		if (browser.toLowerCase().equals("chrome")) {			
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
-	        options.addArguments("--headless");    
+			options.addArguments("enable-automation");
+			options.addArguments("--headless");
 	        options.addArguments("window-size=1366,768");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-extensions");
+			options.addArguments("--dns-prefetch-disable");
+			options.addArguments("--disable-gpu");
+			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 	        tlDriver.set(new ChromeDriver(options));
 	        
 		} else if (browser.toLowerCase().equals("firefox")) {			
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions options = new FirefoxOptions();
-	        options.addArguments("--headless");    
+			options.addArguments("enable-automation");
+			options.addArguments("--headless");
 	        options.addArguments("window-size=1366,768");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-extensions");
+			options.addArguments("--dns-prefetch-disable");
+			options.addArguments("--disable-gpu");
+			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 	        tlDriver.set(new FirefoxDriver(options));
 	        
 		} else if (browser.toLowerCase().equals("edge")) {			
 			WebDriverManager.edgedriver().setup();
 			EdgeOptions options = new EdgeOptions();
-	        options.addArguments("--headless");    
+			options.addArguments("enable-automation");
+			options.addArguments("--headless");
 	        options.addArguments("window-size=1366,768");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-extensions");
+			options.addArguments("--dns-prefetch-disable");
+			options.addArguments("--disable-gpu");
+			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 	        tlDriver.set(new EdgeDriver(options));
 	        
 		} else if (browser.toLowerCase().equals("safari")) {			

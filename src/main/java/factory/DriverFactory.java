@@ -34,42 +34,30 @@ public class DriverFactory {
 		System.out.println("browser value is: " + browser);
 
 		if (browser.toLowerCase().equals("chrome")) {			
-			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("enable-automation");
 			options.addArguments("--headless");
 	        options.addArguments("window-size=1366,768");
-			options.addArguments("--no-sandbox");
-			options.addArguments("--disable-extensions");
-			options.addArguments("--dns-prefetch-disable");
 			options.addArguments("--disable-gpu");
 			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+			WebDriverManager.chromedriver().forceDownload().setup();
 	        tlDriver.set(new ChromeDriver(options));
 	        
-		} else if (browser.toLowerCase().equals("firefox")) {			
-			WebDriverManager.firefoxdriver().setup();
+		} else if (browser.toLowerCase().equals("firefox")) {
 			FirefoxOptions options = new FirefoxOptions();
-			options.addArguments("enable-automation");
 			options.addArguments("--headless");
 	        options.addArguments("window-size=1366,768");
-			options.addArguments("--no-sandbox");
-			options.addArguments("--disable-extensions");
-			options.addArguments("--dns-prefetch-disable");
 			options.addArguments("--disable-gpu");
-			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);			
+			WebDriverManager.firefoxdriver().setup();
 	        tlDriver.set(new FirefoxDriver(options));
 	        
-		} else if (browser.toLowerCase().equals("edge")) {			
-			WebDriverManager.edgedriver().setup();
+		} else if (browser.toLowerCase().equals("edge")) {	
 			EdgeOptions options = new EdgeOptions();
-			options.addArguments("enable-automation");
 			options.addArguments("--headless");
 	        options.addArguments("window-size=1366,768");
-			options.addArguments("--no-sandbox");
-			options.addArguments("--disable-extensions");
-			options.addArguments("--dns-prefetch-disable");
 			options.addArguments("--disable-gpu");
-			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);		
+			WebDriverManager.edgedriver().setup();
 	        tlDriver.set(new EdgeDriver(options));
 	        
 		} else if (browser.toLowerCase().equals("safari")) {			

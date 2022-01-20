@@ -1,0 +1,15 @@
+utilities\HttpRequest.class
+pageObjects\CataloguePage.class
+pageObjects\ChecklistPage.class
+common\Endpoint.class
+pageObjects\HomePage.class
+pageObjects\CheckoutPage.class
+utilities\ElementUtils.class
+objectsModel\Customer.class
+pageObjects\LoginPage.class
+utilities\XLUtility.class
+utilities\ConfigReader.class
+common\CommonConst.class
+common\Message.class
+pageObjects\ProductDetailPage.class
+factory\DriverFactory.class

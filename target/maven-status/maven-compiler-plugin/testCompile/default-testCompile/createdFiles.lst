@@ -1,0 +1,9 @@
+testRunners\TestRunner.class
+stepsDefinition\ChecklistPageSteps.class
+appHooks\ApplicationHooks.class
+stepsDefinition\CheckoutPageSteps.class
+stepsDefinition\HomePageSteps.class
+stepsDefinition\LoginPageSteps.class
+stepsDefinition\ProductDetailPageSteps.class
+testRunners\ParallelRun.class
+stepsDefinition\CataloguePageSteps.class

@@ -36,7 +36,7 @@ public class DriverFactory {
 			ChromeOptions options = new ChromeOptions();
 	        options.addArguments("--headless");    
 	        options.addArguments("window-size=1366,768");
-	        tlDriver.set(new ChromeDriver());
+	        tlDriver.set(new ChromeDriver(options));
 	        
 		} else if (browser.toLowerCase().equals("firefox")) {			
 			WebDriverManager.firefoxdriver().setup();

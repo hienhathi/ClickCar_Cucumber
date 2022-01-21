@@ -1,52 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+<testng-results skipped="0" failed="2" ignored="0" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="38276" started-at="2022-01-21T10:33:13 ICT" finished-at="2022-01-21T10:33:52 ICT">
+  <suite name="Surefire suite" duration-ms="52002" started-at="2022-01-21T12:13:00 ICT" finished-at="2022-01-21T12:13:52 ICT">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="38276" started-at="2022-01-21T10:33:13 ICT" finished-at="2022-01-21T10:33:52 ICT">
+    <test name="Surefire test" duration-ms="52002" started-at="2022-01-21T12:13:00 ICT" finished-at="2022-01-21T12:13:52 ICT">
       <class name="testRunners.ParallelRun">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="setUpClass" is-config="true" duration-ms="487" started-at="2022-01-21T10:33:13 ICT" finished-at="2022-01-21T10:33:14 ICT">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="setUpClass" is-config="true" duration-ms="503" started-at="2022-01-21T12:13:00 ICT" finished-at="2022-01-21T12:13:00 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="29902" started-at="2022-01-21T10:33:14 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T10:33:44 ICT">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="36780" started-at="2022-01-21T12:13:00 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T12:13:37 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User login successfully with default credentials"]]>
+                <![CDATA["User search car and checkout successfully"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Log in Clickcar]"]]>
+                <![CDATA["Optional[Checkout complete]"]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root jss2347 MuiButton-contained buyNow MuiButton-containedPrimary jss2354 MuiButton-containedSizeSmall jss2351 MuiButton-sizeSmall MuiButton-disableElevation" tabindex="0" type="button">...</button> is not clickable at point (1031, 740). Other element would receive the click: <iframe lang="en-US" title="Chat widget" id="sp-chat-iframe" allow="camera; microphone" class="widget-border-radius dialog-shadow" frameborder="0" scrolling="no" src="https://carma.brightpattern.com/clientweb/chat-client-v4/client-chat-page.html?tenantUrl=carma.brightpattern.com&amp;appId=1&amp;referrer=https%3A%2F%2Fdevelop.d6w1nkpc3z1lk.amplifyapp.com%2F&amp;referrerTitle=Carma%20%7C%20The%20easy%20way%20to%20buy%20used%20cars%20in%20Australia&amp;webServer=https%3A%2F%2Fcarma.brightpattern.com%2Fclientweb%2Fapi%2Fv1&amp;logging=&amp;phone_number=&amp;from=&amp;email=&amp;account_number=&amp;first_name=&amp;last_name=&amp;togetherjs_enabled=&amp;autostartVideocall="></iframe>
+  (Session info: headless chrome=97.0.4692.71)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'FCA-00019', ip: '192.168.16.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bfd6989ba1ffce3c594d46a125dffc94, clickElement {id=82ab2a1d-8e37-4159-b043-35ce6e63b7f4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57088}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57088/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bfd6989ba1ffce3c594d46a125dffc94)] -> xpath: //span[text()='Buy now']/parent::button]
+Session ID: bfd6989ba1ffce3c594d46a125dffc94]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root jss2347 MuiButton-contained buyNow MuiButton-containedPrimary jss2354 MuiButton-containedSizeSmall jss2351 MuiButton-sizeSmall MuiButton-disableElevation" tabindex="0" type="button">...</button> is not clickable at point (1031, 740). Other element would receive the click: <iframe lang="en-US" title="Chat widget" id="sp-chat-iframe" allow="camera; microphone" class="widget-border-radius dialog-shadow" frameborder="0" scrolling="no" src="https://carma.brightpattern.com/clientweb/chat-client-v4/client-chat-page.html?tenantUrl=carma.brightpattern.com&amp;appId=1&amp;referrer=https%3A%2F%2Fdevelop.d6w1nkpc3z1lk.amplifyapp.com%2F&amp;referrerTitle=Carma%20%7C%20The%20easy%20way%20to%20buy%20used%20cars%20in%20Australia&amp;webServer=https%3A%2F%2Fcarma.brightpattern.com%2Fclientweb%2Fapi%2Fv1&amp;logging=&amp;phone_number=&amp;from=&amp;email=&amp;account_number=&amp;first_name=&amp;last_name=&amp;togetherjs_enabled=&amp;autostartVideocall="></iframe>
+  (Session info: headless chrome=97.0.4692.71)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'FCA-00019', ip: '192.168.16.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bfd6989ba1ffce3c594d46a125dffc94, clickElement {id=82ab2a1d-8e37-4159-b043-35ce6e63b7f4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57088}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57088/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bfd6989ba1ffce3c594d46a125dffc94)] -> xpath: //span[text()='Buy now']/parent::button]
+Session ID: bfd6989ba1ffce3c594d46a125dffc94
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at utilities.ElementUtils.doClick(ElementUtils.java:49)
+at pageObjects.ProductDetailPage.buyProduct(ProductDetailPage.java:45)
+at stepsDefinition.ProductDetailPageSteps.user_buy_current_car(ProductDetailPageSteps.java:14)
+at ✽.User buy current car(file:///C:/Users/hienht/eclipse-workspace/QAClickcar/src/test/resources/features/CheckoutPage.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="34711" started-at="2022-01-21T10:33:14 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T10:33:49 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User login with data driven file"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Log in Clickcar]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="30144" started-at="2022-01-21T10:33:14 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T10:33:44 ICT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="22555" started-at="2022-01-21T12:13:00 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T12:13:23 ICT">
           <params>
             <param index="0">
               <value>
@@ -62,56 +88,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="28151" started-at="2022-01-21T10:33:14 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T10:33:42 ICT">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="28801" started-at="2022-01-21T12:13:00 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T12:13:29 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User can check Checklist"]]>
+                <![CDATA["User login with specific credentials"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Checklist features]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="34404" started-at="2022-01-21T10:33:14 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T10:33:48 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User search car and checkout successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Checkout complete]"]]>
+                <![CDATA["Optional[Log in Clickcar]"]]>
               </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //span[text()='Take me back home']/parent::button (tried for 10 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: (//button//*[text()='Login'])[1] (tried for 10 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[text()='Take me back home']/parent::button (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: (//button//*[text()='Login'])[1] (tried for 10 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:101)
-at pageObjects.CheckoutPage.isPageDisplayed(CheckoutPage.java:22)
-at stepsDefinition.CheckoutPageSteps.check_out_page_is_displayed(CheckoutPageSteps.java:13)
-at ✽.Verify check out page is displayed(file:///C:/Users/hienht/eclipse-workspace/QAClickcar/src/test/resources/features/CheckoutPage.feature:13)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Take me back home']/parent::button"}
+at utilities.ElementUtils.doClick(ElementUtils.java:46)
+at pageObjects.HomePage.clickLoginStart(HomePage.java:42)
+at stepsDefinition.LoginPageSteps.user_is_on_login_page(LoginPageSteps.java:22)
+at ✽.User is on Login page(file:///C:/Users/hienht/eclipse-workspace/QAClickcar/src/test/resources/features/LoginPage.feature:14)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//button//*[text()='Login'])[1]"}
   (Session info: headless chrome=97.0.4692.71)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'FCA-00019', ip: '192.168.16.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b67c2c590f75c6bbbef3a58d838dbdce, findElement {using=xpath, value=//span[text()='Take me back home']/parent::button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57876}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57876/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b67c2c590f75c6bbbef3a58d838dbdce
+Command: [c6d7cd9e3d5f47dfa58432f180f8f2fb, findElement {using=xpath, value=(//button//*[text()='Login'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57087}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57087/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c6d7cd9e3d5f47dfa58432f180f8f2fb
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -131,8 +142,9 @@ at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.
 at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
 at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:101)
-at pageObjects.CheckoutPage.isPageDisplayed(CheckoutPage.java:22)
-at stepsDefinition.CheckoutPageSteps.check_out_page_is_displayed(CheckoutPageSteps.java:13)
+at utilities.ElementUtils.doClick(ElementUtils.java:46)
+at pageObjects.HomePage.clickLoginStart(HomePage.java:42)
+at stepsDefinition.LoginPageSteps.user_is_on_login_page(LoginPageSteps.java:22)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -174,11 +186,11 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="20762" started-at="2022-01-21T10:33:14 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T10:33:35 ICT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="32812" started-at="2022-01-21T12:13:00 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T12:13:33 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User login with specific credentials"]]>
+                <![CDATA["User login successfully with default credentials"]]>
               </value>
             </param>
             <param index="1">
@@ -190,7 +202,39 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="tearDownClass" is-config="true" duration-ms="3047" started-at="2022-01-21T10:33:49 ICT" finished-at="2022-01-21T10:33:52 ICT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="41130" started-at="2022-01-21T12:13:00 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T12:13:41 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can check Checklist"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Checklist features]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="49433" started-at="2022-01-21T12:13:00 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T12:13:50 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User login with data driven file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Log in Clickcar]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="tearDownClass" is-config="true" duration-ms="2018" started-at="2022-01-21T12:13:50 ICT" finished-at="2022-01-21T12:13:52 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

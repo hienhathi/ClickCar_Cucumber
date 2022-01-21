@@ -5,8 +5,12 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Properties;
+
+import javax.print.attribute.standard.DateTimeAtCompleted;
+
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.FillPatternType;
@@ -195,7 +199,6 @@ public class XLUtility {
 		    	  cell1.setCellValue(rowData.get(i));
 			}
 		}	
-	      
 		String filePath=output_path.replace(".xlsx", "") + "_result.xlsx";
 		FileOutputStream outstream=new FileOutputStream(filePath, false);
 		workbook.write(outstream);		

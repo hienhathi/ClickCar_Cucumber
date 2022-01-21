@@ -55,7 +55,7 @@ public class ChecklistPage {
 			}
 		}	
 	      
-		String filePath="./ItemList.xlsx";
+		String filePath="./test-output/ItemList.xlsx";
 		FileOutputStream outstream=new FileOutputStream(filePath);
 		workbook.write(outstream);		
 		outstream.close();

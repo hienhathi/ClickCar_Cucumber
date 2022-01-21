@@ -1,17 +1,29 @@
 -------------------------------------------------------------------------------
 Test set: testRunners.ParallelRun
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 38.777 s <<< FAILURE! - in testRunners.ParallelRun
-runScenario(testRunners.ParallelRun)  Time elapsed: 34.404 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[text()='Take me back home']/parent::button (tried for 10 second(s) with 500 milliseconds interval)
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 52.481 s <<< FAILURE! - in testRunners.ParallelRun
+runScenario(testRunners.ParallelRun)  Time elapsed: 28.808 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: (//button//*[text()='Login'])[1] (tried for 10 second(s) with 500 milliseconds interval)
 Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Take me back home']/parent::button"}
+no such element: Unable to locate element: {"method":"xpath","selector":"(//button//*[text()='Login'])[1]"}
   (Session info: headless chrome=97.0.4692.71)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'FCA-00019', ip: '192.168.16.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b67c2c590f75c6bbbef3a58d838dbdce, findElement {using=xpath, value=//span[text()='Take me back home']/parent::button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57876}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57876/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b67c2c590f75c6bbbef3a58d838dbdce
+Command: [c6d7cd9e3d5f47dfa58432f180f8f2fb, findElement {using=xpath, value=(//button//*[text()='Login'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57087}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57087/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c6d7cd9e3d5f47dfa58432f180f8f2fb
+
+runScenario(testRunners.ParallelRun)  Time elapsed: 36.781 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root jss2347 MuiButton-contained buyNow MuiButton-containedPrimary jss2354 MuiButton-containedSizeSmall jss2351 MuiButton-sizeSmall MuiButton-disableElevation" tabindex="0" type="button">...</button> is not clickable at point (1031, 740). Other element would receive the click: <iframe lang="en-US" title="Chat widget" id="sp-chat-iframe" allow="camera; microphone" class="widget-border-radius dialog-shadow" frameborder="0" scrolling="no" src="https://carma.brightpattern.com/clientweb/chat-client-v4/client-chat-page.html?tenantUrl=carma.brightpattern.com&amp;appId=1&amp;referrer=https%3A%2F%2Fdevelop.d6w1nkpc3z1lk.amplifyapp.com%2F&amp;referrerTitle=Carma%20%7C%20The%20easy%20way%20to%20buy%20used%20cars%20in%20Australia&amp;webServer=https%3A%2F%2Fcarma.brightpattern.com%2Fclientweb%2Fapi%2Fv1&amp;logging=&amp;phone_number=&amp;from=&amp;email=&amp;account_number=&amp;first_name=&amp;last_name=&amp;togetherjs_enabled=&amp;autostartVideocall="></iframe>
+  (Session info: headless chrome=97.0.4692.71)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'FCA-00019', ip: '192.168.16.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bfd6989ba1ffce3c594d46a125dffc94, clickElement {id=82ab2a1d-8e37-4159-b043-35ce6e63b7f4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57088}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57088/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bfd6989ba1ffce3c594d46a125dffc94)] -> xpath: //span[text()='Buy now']/parent::button]
+Session ID: bfd6989ba1ffce3c594d46a125dffc94
 

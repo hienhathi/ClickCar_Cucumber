@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 21, 2022 10:33:13 AM</span></a>
+<a href="#"><span class="badge badge-primary">Jan 21, 2022 12:13:00 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,25 +71,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 21, 2022 10:33:13 AM</h3>
+<h3>Jan 21, 2022 12:13:00 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 21, 2022 10:33:49 AM</h3>
+<h3>Jan 21, 2022 12:13:50 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>2</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>1</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -105,12 +105,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='66%'>
-<b>2</b> features passed
+<div><small data-tooltip='33%'>
+<b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='33%'><b>1</b> features failed,
+<small data-tooltip='66%'><b>2</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -128,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='83%'><b>5</b> scenarios passed</small></div>
+<div><small data-tooltip='66%'><b>4</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='16%'><b>1</b> scenarios failed,
+<small data-tooltip='33%'><b>2</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='96%'><b>25</b> steps passed</small></div>
+<div><small data-tooltip='72%'><b>16</b> steps passed</small></div>
 <div>
-<small data-tooltip='3%'><b>1</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='9%'><b>2</b> steps failed,
+<b>4</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Checklist features":27.981,"Log in Clickcar":34.541,"Checkout complete":34.219
+"Checklist features":40.962,"Log in Clickcar":49.249,"Checkout complete":36.596
 };
 </script>
 <div class="row">
@@ -177,12 +177,12 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@checkout</td>
-<td>0</td>
+<td>@data-driven</td>
 <td>1</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>33.333%</td>
 </tr>
 <tr>
 <td>@e2eflow</td>
@@ -193,14 +193,6 @@ var timeline = {
 <td>0%</td>
 </tr>
 <tr>
-<td>@smoke</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
 <td>@data-file</td>
 <td>2</td>
 <td>0</td>
@@ -209,8 +201,8 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@data-driven</td>
-<td>3</td>
+<td>@smoke</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -218,11 +210,19 @@ var timeline = {
 </tr>
 <tr>
 <td>@login</td>
-<td>5</td>
+<td>4</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>@checkout</td>
 <td>0</td>
-<td>100%</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -259,21 +259,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
-failParent: 1,
+passParent: 1,
+failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 5,
-failChild: 1,
+passChild: 4,
+failChild: 2,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 25,
-failGrandChild: 1,
+passGrandChild: 16,
+failGrandChild: 2,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 4,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -296,7 +296,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@checkout</a><a class="dropdown-item" href="#">@e2eflow</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@data-file</a><a class="dropdown-item" href="#">@data-driven</a><a class="dropdown-item" href="#">@login</a>
+<a class="dropdown-item" href="#">@data-driven</a><a class="dropdown-item" href="#">@e2eflow</a><a class="dropdown-item" href="#">@data-file</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@login</a><a class="dropdown-item" href="#">@checkout</a>
 </ul>
 </li>
 </ul>
@@ -309,7 +309,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Checklist features</p>
             <p class="text-sm">
-              <span>10:33:14 AM</span> / <span>00:00:27:981</span>
+              <span>12:13:00 PM</span> / <span>00:00:40:962</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -318,9 +318,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Checklist features</h5>
-<span class='badge badge-success'>01.21.2022 10:33:14 AM</span>
-<span class='badge badge-danger'>01.21.2022 10:33:42 AM</span>
-<span class='badge badge-default'>00:00:27:981</span>
+<span class='badge badge-success'>01.21.2022 12:13:00 PM</span>
+<span class='badge badge-danger'>01.21.2022 12:13:41 PM</span>
+<span class='badge badge-default'>00:00:40:962</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -333,9 +333,6 @@ eventsCount: 5,
     <div class="card-header" role="tab">
       <div class="card-title">
         <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User can check Checklist</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
       </div>
     </div>
         <div class="collapse">
@@ -350,42 +347,31 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>appHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>User_can_check_Checklist
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='./embedded2.png' src="./embedded2.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
           </div>
         </div>
   </div>
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="fail" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Log in Clickcar</p>
             <p class="text-sm">
-              <span>10:33:14 AM</span> / <span>00:00:34:541</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>12:13:00 PM</span> / <span>00:00:49:249</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Log in Clickcar</h5>
-<span class='badge badge-success'>01.21.2022 10:33:14 AM</span>
-<span class='badge badge-danger'>01.21.2022 10:33:49 AM</span>
-<span class='badge badge-default'>00:00:34:541</span>
+<h5 class="test-status text-fail">Log in Clickcar</h5>
+<span class='badge badge-success'>01.21.2022 12:13:00 PM</span>
+<span class='badge badge-danger'>01.21.2022 12:13:50 PM</span>
+<span class='badge badge-default'>00:00:49:249</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -397,94 +383,19 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>User login with specific credentials</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
+        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>User login with data driven file</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>User login with specific credentials</div>
-                    <div class="status-avatar float-right">
-                      <i class="fa fa-paperclip"></i>
-                    </div>
+                  <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>User login with data driven file</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>Given User is on Login page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When User input email "hoangnd1@smartosc.com" and password "Hoang123"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User click Login button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then Verify that log in status is "Success"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>appHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>User_login_with_specific_credentials
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='./embedded4.png' src="./embedded4.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>User login with specific credentials</div>
-                    <div class="status-avatar float-right">
-                      <i class="fa fa-paperclip"></i>
-                    </div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given User is on Login page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When User input email "hoangnd1@smartosc.com" and password "Hoang1234"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User click Login button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then Verify that log in status is "Failed"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>appHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>User_login_with_specific_credentials
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='./embedded1.png' src="./embedded1.png">
-    
-    </div></div>
-</div>
+                    <span>When User login with data from excel with file name "loginData.xlsx" and sheet name "Sheet1"</span>
       <div>
       </div>
                   </div>
@@ -495,10 +406,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>User login successfully with default credentials</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
+        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>User login successfully with default credentials</div>
       </div>
     </div>
         <div class="collapse">
@@ -523,140 +431,78 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>appHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>User_login_successfully_with_default_credentials
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='./embedded3.png' src="./embedded3.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
           </div>
         </div>
   </div>
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>User login with data driven file</div>
+        <div class="node" id="9"><span class="badge log fail-bg mr-2">Fail</span>User login with specific credentials</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
       </div>
     </div>
-        <div class="scenario_outline collapse">
+        <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>User login with data driven file</div>
-                    <div class="status-avatar float-right">
-                      <i class="fa fa-paperclip"></i>
-                    </div>
+                  <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>User login with specific credentials</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>When User login with data from excel with file name "loginData.xlsx" and sheet name "Sheet1"</span>
+                    <span>Given User is on Login page</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>appHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>User_login_with_data_driven_file
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='./embedded6.png' src="./embedded6.png">
-    
-    </div></div>
-</div>
+                    <span>When User input email "hoangnd1@smartosc.com" and password "Hoang1234"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click Login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify that log in status is "Failed"</span>
       <div>
       </div>
                   </div>
               </div>
             </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="6"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Checkout complete</p>
-            <p class="text-sm">
-              <span>10:33:14 AM</span> / <span>00:00:34:219</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">Checkout complete</h5>
-<span class='badge badge-success'>01.21.2022 10:33:14 AM</span>
-<span class='badge badge-danger'>01.21.2022 10:33:48 AM</span>
-<span class='badge badge-default'>00:00:34:219</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-10 m-l-5"> As user I want to search and buy a car</div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="7"><span class="badge log fail-bg mr-2">Fail</span>User search car and checkout successfully</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepsDefinition.HomePageSteps.user_login_successfully_with_default_credentials()">
-                <span>Given User login successfully with default credentials</span>
-      <div>
-      </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="11"><span class="badge log fail-bg mr-2">Fail</span>User login with specific credentials</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
               </div>
-              <div class="step pass-bg" title="stepsDefinition.HomePageSteps.user_go_to_Catalogue_page()">
-                <span>When User go to Catalogue page</span>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User is on Login page</span>
       <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.CataloguePageSteps.search_and_select_car_by_keyword(java.lang.String)">
-                <span>And Search and select car by keyword "Toyota rav4"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.ProductDetailPageSteps.user_buy_current_car()">
-                <span>And User buy current car</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepsDefinition.CheckoutPageSteps.check_out_page_is_displayed()">
-                <span>Then Verify check out page is displayed</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[text()='Take me back home']/parent::button (tried for 10 second(s) with 500 milliseconds interval)
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: (//button//*[text()='Login'])[1] (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 	at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:101)
-	at pageObjects.CheckoutPage.isPageDisplayed(CheckoutPage.java:22)
-	at stepsDefinition.CheckoutPageSteps.check_out_page_is_displayed(CheckoutPageSteps.java:13)
-	at ?.Verify check out page is displayed(file:///C:/Users/hienht/eclipse-workspace/QAClickcar/src/test/resources/features/CheckoutPage.feature:13)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Take me back home']/parent::button"}
+	at utilities.ElementUtils.doClick(ElementUtils.java:46)
+	at pageObjects.HomePage.clickLoginStart(HomePage.java:42)
+	at stepsDefinition.LoginPageSteps.user_is_on_login_page(LoginPageSteps.java:22)
+	at ?.User is on Login page(file:///C:/Users/hienht/eclipse-workspace/QAClickcar/src/test/resources/features/LoginPage.feature:14)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//button//*[text()='Login'])[1]"}
   (Session info: headless chrome=97.0.4692.71)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'FCA-00019', ip: '192.168.16.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b67c2c590f75c6bbbef3a58d838dbdce, findElement {using=xpath, value=//span[text()='Take me back home']/parent::button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57876}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57876/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b67c2c590f75c6bbbef3a58d838dbdce
+Command: [c6d7cd9e3d5f47dfa58432f180f8f2fb, findElement {using=xpath, value=(//button//*[text()='Login'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57087}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57087/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c6d7cd9e3d5f47dfa58432f180f8f2fb
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -676,8 +522,9 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
 	at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:101)
-	at pageObjects.CheckoutPage.isPageDisplayed(CheckoutPage.java:22)
-	at stepsDefinition.CheckoutPageSteps.check_out_page_is_displayed(CheckoutPageSteps.java:13)
+	at utilities.ElementUtils.doClick(ElementUtils.java:46)
+	at pageObjects.HomePage.clickLoginStart(HomePage.java:42)
+	at stepsDefinition.LoginPageSteps.user_is_on_login_page(LoginPageSteps.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -716,12 +563,136 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 </textarea>
       
       </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User input email "hoangnd1@smartosc.com" and password "Hoang123"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User click Login button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify that log in status is "Success"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>appHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User_login_with_specific_credentials
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./embedded1.png' src="./embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Checkout complete</p>
+            <p class="text-sm">
+              <span>12:13:00 PM</span> / <span>00:00:36:596</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Checkout complete</h5>
+<span class='badge badge-success'>01.21.2022 12:13:00 PM</span>
+<span class='badge badge-danger'>01.21.2022 12:13:37 PM</span>
+<span class='badge badge-default'>00:00:36:596</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As user I want to search and buy a car</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log fail-bg mr-2">Fail</span>User search car and checkout successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepsDefinition.HomePageSteps.user_login_successfully_with_default_credentials()">
+                <span>Given User login successfully with default credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.HomePageSteps.user_go_to_Catalogue_page()">
+                <span>When User go to Catalogue page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.CataloguePageSteps.search_and_select_car_by_keyword(java.lang.String)">
+                <span>And Search and select car by keyword "Toyota rav4"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepsDefinition.ProductDetailPageSteps.user_buy_current_car()">
+                <span>And User buy current car</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root jss2347 MuiButton-contained buyNow MuiButton-containedPrimary jss2354 MuiButton-containedSizeSmall jss2351 MuiButton-sizeSmall MuiButton-disableElevation" tabindex="0" type="button">...</button> is not clickable at point (1031, 740). Other element would receive the click: <iframe lang="en-US" title="Chat widget" id="sp-chat-iframe" allow="camera; microphone" class="widget-border-radius dialog-shadow" frameborder="0" scrolling="no" src="https://carma.brightpattern.com/clientweb/chat-client-v4/client-chat-page.html?tenantUrl=carma.brightpattern.com&amp;appId=1&amp;referrer=https%3A%2F%2Fdevelop.d6w1nkpc3z1lk.amplifyapp.com%2F&amp;referrerTitle=Carma%20%7C%20The%20easy%20way%20to%20buy%20used%20cars%20in%20Australia&amp;webServer=https%3A%2F%2Fcarma.brightpattern.com%2Fclientweb%2Fapi%2Fv1&amp;logging=&amp;phone_number=&amp;from=&amp;email=&amp;account_number=&amp;first_name=&amp;last_name=&amp;togetherjs_enabled=&amp;autostartVideocall="></iframe>
+  (Session info: headless chrome=97.0.4692.71)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'FCA-00019', ip: '192.168.16.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bfd6989ba1ffce3c594d46a125dffc94, clickElement {id=82ab2a1d-8e37-4159-b043-35ce6e63b7f4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57088}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57088/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bfd6989ba1ffce3c594d46a125dffc94)] -> xpath: //span[text()='Buy now']/parent::button]
+Session ID: bfd6989ba1ffce3c594d46a125dffc94
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at utilities.ElementUtils.doClick(ElementUtils.java:49)
+	at pageObjects.ProductDetailPage.buyProduct(ProductDetailPage.java:45)
+	at stepsDefinition.ProductDetailPageSteps.user_buy_current_car(ProductDetailPageSteps.java:14)
+	at ?.User buy current car(file:///C:/Users/hienht/eclipse-workspace/QAClickcar/src/test/resources/features/CheckoutPage.feature:12)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepsDefinition.CheckoutPageSteps.check_out_page_is_displayed()">
+                <span>Then Verify check out page is displayed</span>
+      <div>Step skipped
+      </div>
               </div>
               <div class="step pass-bg" title="AFTER">
                 <span>appHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
       <div>User_search_car_and_checkout_successfully
           <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='./embedded5.png' src="./embedded5.png">
+<img data-featherlight='./embedded2.png' src="./embedded2.png">
     
     </div></div>
 </div>
@@ -754,15 +725,17 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>2</span>
 </span>
-<p class="name">@checkout</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">@data-driven</p>
+<p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@checkout</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>@data-driven</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -775,11 +748,31 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>10:33:14 AM</td>
+<td>12:13:00 PM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='7'>User search car and checkout successfully</a>
+<a href="#" class="linked" test-id='3' id='9'>User login with specific credentials</a>
 <div class="">
-<span class="badge badge-default">Checkout complete.User search car and checkout successfully</span>
+<span class="badge badge-default">Log in Clickcar.User login with specific credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:13:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='10'>User login with specific credentials</a>
+<div class="">
+<span class="badge badge-default">Log in Clickcar.User login with specific credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:13:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='11'>User login with specific credentials</a>
+<div class="">
+<span class="badge badge-default">Log in Clickcar.User login with specific credentials</span>
 </div>
 </td>
 </tr>
@@ -811,47 +804,11 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>10:33:14 AM</td>
+<td>12:13:00 PM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='7'>User search car and checkout successfully</a>
+<a href="#" class="linked" test-id='7' id='8'>User search car and checkout successfully</a>
 <div class="">
 <span class="badge badge-default">Checkout complete.User search car and checkout successfully</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@smoke</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@smoke</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:33:14 AM</td>
-<td>
-<a href="#" class="linked" test-id='3' id='12'>User login successfully with default credentials</a>
-<div class="">
-<span class="badge badge-default">Log in Clickcar.User login successfully with default credentials</span>
 </div>
 </td>
 </tr>
@@ -883,9 +840,9 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:33:14 AM</td>
+<td>12:13:00 PM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='13'>User login with data driven file</a>
+<a href="#" class="linked" test-id='3' id='4'>User login with data driven file</a>
 <div class="">
 <span class="badge badge-default">Log in Clickcar.User login with data driven file</span>
 </div>
@@ -893,9 +850,9 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:33:14 AM</td>
+<td>12:13:00 PM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='14'>User login with data driven file</a>
+<a href="#" class="linked" test-id='3' id='5'>User login with data driven file</a>
 <div class="">
 <span class="badge badge-default">Log in Clickcar.User login with data driven file</span>
 </div>
@@ -908,15 +865,15 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>3</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@data-driven</p>
-<p class="duration text-sm">3 tests</p>
+<p class="name">@smoke</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@data-driven</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -929,31 +886,11 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:33:14 AM</td>
+<td>12:13:00 PM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='4'>User login with specific credentials</a>
+<a href="#" class="linked" test-id='3' id='6'>User login successfully with default credentials</a>
 <div class="">
-<span class="badge badge-default">Log in Clickcar.User login with specific credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:33:14 AM</td>
-<td>
-<a href="#" class="linked" test-id='3' id='5'>User login with specific credentials</a>
-<div class="">
-<span class="badge badge-default">Log in Clickcar.User login with specific credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:33:14 AM</td>
-<td>
-<a href="#" class="linked" test-id='3' id='8'>User login with specific credentials</a>
-<div class="">
-<span class="badge badge-default">Log in Clickcar.User login with specific credentials</span>
+<span class="badge badge-default">Log in Clickcar.User login successfully with default credentials</span>
 </div>
 </td>
 </tr>
@@ -964,7 +901,8 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>5</span>
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">@login</p>
 <p class="duration text-sm">5 tests</p>
@@ -972,7 +910,8 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 <div class="test-contents d-none">
 <div class="info">
 <h4>@login</h4>
-<span status="pass" class='badge log pass-bg'>5 passed</span>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -985,39 +924,29 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:33:14 AM</td>
+<td>12:13:00 PM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='4'>User login with specific credentials</a>
+<a href="#" class="linked" test-id='3' id='4'>User login with data driven file</a>
 <div class="">
-<span class="badge badge-default">Log in Clickcar.User login with specific credentials</span>
+<span class="badge badge-default">Log in Clickcar.User login with data driven file</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:33:14 AM</td>
+<td>12:13:00 PM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='5'>User login with specific credentials</a>
+<a href="#" class="linked" test-id='3' id='5'>User login with data driven file</a>
 <div class="">
-<span class="badge badge-default">Log in Clickcar.User login with specific credentials</span>
+<span class="badge badge-default">Log in Clickcar.User login with data driven file</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:33:14 AM</td>
+<td>12:13:00 PM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='8'>User login with specific credentials</a>
-<div class="">
-<span class="badge badge-default">Log in Clickcar.User login with specific credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:33:14 AM</td>
-<td>
-<a href="#" class="linked" test-id='3' id='12'>User login successfully with default credentials</a>
+<a href="#" class="linked" test-id='3' id='6'>User login successfully with default credentials</a>
 <div class="">
 <span class="badge badge-default">Log in Clickcar.User login successfully with default credentials</span>
 </div>
@@ -1025,11 +954,57 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:33:14 AM</td>
+<td>12:13:00 PM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='14'>User login with data driven file</a>
+<a href="#" class="linked" test-id='3' id='10'>User login with specific credentials</a>
 <div class="">
-<span class="badge badge-default">Log in Clickcar.User login with data driven file</span>
+<span class="badge badge-default">Log in Clickcar.User login with specific credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:13:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='11'>User login with specific credentials</a>
+<div class="">
+<span class="badge badge-default">Log in Clickcar.User login with specific credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@checkout</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@checkout</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:13:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='8'>User search car and checkout successfully</a>
+<div class="">
+<span class="badge badge-default">Checkout complete.User search car and checkout successfully</span>
 </div>
 </td>
 </tr>
@@ -1049,7 +1024,7 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -1077,11 +1052,47 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>10:33:38 AM</td>
+<td>12:13:07 PM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='45'>Then Verify check out page is displayed</a>
+<a href="#" class="linked" test-id='3' id='25'>Given User is on Login page</a>
 <div class="">
-<span class="badge badge-default">Checkout complete.User search car and checkout successfully.Then Verify check out page is displayed</span>
+<span class="badge badge-default">Log in Clickcar.User login with specific credentials.Given User is on Login page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:13:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='48'>And User buy current car</a>
+<div class="">
+<span class="badge badge-default">Checkout complete.User search car and checkout successfully.And User buy current car</span>
 </div>
 </td>
 </tr>

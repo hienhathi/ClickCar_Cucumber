@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jan 21 10:33:13 ICT 2022</td>
+<td>Started on:</td><td>Fri Jan 21 12:13:00 ICT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>38 seconds (38276 ms)</td>
+<tr><td>Total time:</td><td>52 seconds (52002 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,22 +76,77 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testRunners.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testRunners.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User search car and checkout successfully", "Optional[Checkout complete]"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[text()=&apos;Take me back home&apos;]/parent::button (tried for 10 second(s) with 500 milliseconds interval)
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root jss2347 MuiButton-contained buyNow MuiButton-containedPrimary jss2354 MuiButton-containedSizeSmall jss2351 MuiButton-sizeSmall MuiButton-disableElevation&quot; tabindex=&quot;0&quot; type=&quot;button&quot;&gt;...&lt;/button&gt; is not clickable at point (1031, 740). Other element would receive the click: &lt;iframe lang=&quot;en-US&quot; title=&quot;Chat widget&quot; id=&quot;sp-chat-iframe&quot; allow=&quot;camera; microphone&quot; class=&quot;widget-border-radius dialog-shadow&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; src=&quot;https://carma.brightpattern.com/clientweb/chat-client-v4/client-chat-page.html?tenantUrl=carma.brightpattern.com&amp;amp;appId=1&amp;amp;referrer=https%3A%2F%2Fdevelop.d6w1nkpc3z1lk.amplifyapp.com%2F&amp;amp;referrerTitle=Carma%20%7C%20The%20easy%20way%20to%20buy%20used%20cars%20in%20Australia&amp;amp;webServer=https%3A%2F%2Fcarma.brightpattern.com%2Fclientweb%2Fapi%2Fv1&amp;amp;logging=&amp;amp;phone_number=&amp;amp;from=&amp;amp;email=&amp;amp;account_number=&amp;amp;first_name=&amp;amp;last_name=&amp;amp;togetherjs_enabled=&amp;amp;autostartVideocall=&quot;&gt;&lt;/iframe&gt;
+  (Session info: headless chrome=97.0.4692.71)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;FCA-00019&apos;, ip: &apos;192.168.16.179&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bfd6989ba1ffce3c594d46a125dffc94, clickElement {id=82ab2a1d-8e37-4159-b043-35ce6e63b7f4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57088}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57088/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bfd6989ba1ffce3c594d46a125dffc94)] -&gt; xpath: //span[text()=&apos;Buy now&apos;]/parent::button]
+Session ID: bfd6989ba1ffce3c594d46a125dffc94
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at utilities.ElementUtils.doClick(ElementUtils.java:49)
+	at pageObjects.ProductDetailPage.buyProduct(ProductDetailPage.java:45)
+	at stepsDefinition.ProductDetailPageSteps.user_buy_current_car(ProductDetailPageSteps.java:14)
+	at ?.User buy current car(file:///C:/Users/hienht/eclipse-workspace/QAClickcar/src/test/resources/features/CheckoutPage.feature:12)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2077456946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2077456946'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root jss2347 MuiButton-contained buyNow MuiButton-containedPrimary jss2354 MuiButton-containedSizeSmall jss2351 MuiButton-sizeSmall MuiButton-disableElevation&quot; tabindex=&quot;0&quot; type=&quot;button&quot;&gt;...&lt;/button&gt; is not clickable at point (1031, 740). Other element would receive the click: &lt;iframe lang=&quot;en-US&quot; title=&quot;Chat widget&quot; id=&quot;sp-chat-iframe&quot; allow=&quot;camera; microphone&quot; class=&quot;widget-border-radius dialog-shadow&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; src=&quot;https://carma.brightpattern.com/clientweb/chat-client-v4/client-chat-page.html?tenantUrl=carma.brightpattern.com&amp;amp;appId=1&amp;amp;referrer=https%3A%2F%2Fdevelop.d6w1nkpc3z1lk.amplifyapp.com%2F&amp;amp;referrerTitle=Carma%20%7C%20The%20easy%20way%20to%20buy%20used%20cars%20in%20Australia&amp;amp;webServer=https%3A%2F%2Fcarma.brightpattern.com%2Fclientweb%2Fapi%2Fv1&amp;amp;logging=&amp;amp;phone_number=&amp;amp;from=&amp;amp;email=&amp;amp;account_number=&amp;amp;first_name=&amp;amp;last_name=&amp;amp;togetherjs_enabled=&amp;amp;autostartVideocall=&quot;&gt;&lt;/iframe&gt;
+  (Session info: headless chrome=97.0.4692.71)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;FCA-00019&apos;, ip: &apos;192.168.16.179&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bfd6989ba1ffce3c594d46a125dffc94, clickElement {id=82ab2a1d-8e37-4159-b043-35ce6e63b7f4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57088}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57088/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bfd6989ba1ffce3c594d46a125dffc94)] -&gt; xpath: //span[text()=&apos;Buy now&apos;]/parent::button]
+Session ID: bfd6989ba1ffce3c594d46a125dffc94
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at utilities.ElementUtils.doClick(ElementUtils.java:49)
+	at pageObjects.ProductDetailPage.buyProduct(ProductDetailPage.java:45)
+	at stepsDefinition.ProductDetailPageSteps.user_buy_current_car(ProductDetailPageSteps.java:14)
+	at ?.User buy current car(file:///C:/Users/hienht/eclipse-workspace/QAClickcar/src/test/resources/features/CheckoutPage.feature:12)
+</pre></div></td>
+<td>36</td>
+<td>testRunners.ParallelRun@16f7c8c1</td></tr>
+<tr>
+<td title='testRunners.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testRunners.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login with specific credentials", "Optional[Log in Clickcar]"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: (//button//*[text()=&apos;Login&apos;])[1] (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 	at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:101)
-	at pageObjects.CheckoutPage.isPageDisplayed(CheckoutPage.java:22)
-	at stepsDefinition.CheckoutPageSteps.check_out_page_is_displayed(CheckoutPageSteps.java:13)
-	at ?.Verify check out page is displayed(file:///C:/Users/hienht/eclipse-workspace/QAClickcar/src/test/resources/features/CheckoutPage.feature:13)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Take me back home&apos;]/parent::button&quot;}
+	at utilities.ElementUtils.doClick(ElementUtils.java:46)
+	at pageObjects.HomePage.clickLoginStart(HomePage.java:42)
+	at stepsDefinition.LoginPageSteps.user_is_on_login_page(LoginPageSteps.java:22)
+	at ?.User is on Login page(file:///C:/Users/hienht/eclipse-workspace/QAClickcar/src/test/resources/features/LoginPage.feature:14)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//button//*[text()=&apos;Login&apos;])[1]&quot;}
   (Session info: headless chrome=97.0.4692.71)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
 System info: host: &apos;FCA-00019&apos;, ip: &apos;192.168.16.179&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b67c2c590f75c6bbbef3a58d838dbdce, findElement {using=xpath, value=//span[text()=&apos;Take me back home&apos;]/parent::button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57876}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57876/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b67c2c590f75c6bbbef3a58d838dbdce
+Command: [c6d7cd9e3d5f47dfa58432f180f8f2fb, findElement {using=xpath, value=(//button//*[text()=&apos;Login&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57087}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57087/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c6d7cd9e3d5f47dfa58432f180f8f2fb
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -107,8 +162,9 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
 	at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:101)
-	at pageObjects.CheckoutPage.isPageDisplayed(CheckoutPage.java:22)
-	at stepsDefinition.CheckoutPageSteps.check_out_page_is_displayed(CheckoutPageSteps.java:13)
+	at utilities.ElementUtils.doClick(ElementUtils.java:46)
+	at pageObjects.HomePage.clickLoginStart(HomePage.java:42)
+	at stepsDefinition.LoginPageSteps.user_is_on_login_page(LoginPageSteps.java:22)
 	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
 	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
 	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
@@ -131,23 +187,24 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace518810372", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace518810372'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[text()=&apos;Take me back home&apos;]/parent::button (tried for 10 second(s) with 500 milliseconds interval)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1577661743", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1577661743'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: (//button//*[text()=&apos;Login&apos;])[1] (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 	at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:101)
-	at pageObjects.CheckoutPage.isPageDisplayed(CheckoutPage.java:22)
-	at stepsDefinition.CheckoutPageSteps.check_out_page_is_displayed(CheckoutPageSteps.java:13)
-	at ?.Verify check out page is displayed(file:///C:/Users/hienht/eclipse-workspace/QAClickcar/src/test/resources/features/CheckoutPage.feature:13)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Take me back home&apos;]/parent::button&quot;}
+	at utilities.ElementUtils.doClick(ElementUtils.java:46)
+	at pageObjects.HomePage.clickLoginStart(HomePage.java:42)
+	at stepsDefinition.LoginPageSteps.user_is_on_login_page(LoginPageSteps.java:22)
+	at ?.User is on Login page(file:///C:/Users/hienht/eclipse-workspace/QAClickcar/src/test/resources/features/LoginPage.feature:14)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//button//*[text()=&apos;Login&apos;])[1]&quot;}
   (Session info: headless chrome=97.0.4692.71)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
 System info: host: &apos;FCA-00019&apos;, ip: &apos;192.168.16.179&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b67c2c590f75c6bbbef3a58d838dbdce, findElement {using=xpath, value=//span[text()=&apos;Take me back home&apos;]/parent::button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57876}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57876/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b67c2c590f75c6bbbef3a58d838dbdce
+Command: [c6d7cd9e3d5f47dfa58432f180f8f2fb, findElement {using=xpath, value=(//button//*[text()=&apos;Login&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57087}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57087/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c6d7cd9e3d5f47dfa58432f180f8f2fb
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -167,8 +224,9 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
 	at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:101)
-	at pageObjects.CheckoutPage.isPageDisplayed(CheckoutPage.java:22)
-	at stepsDefinition.CheckoutPageSteps.check_out_page_is_displayed(CheckoutPageSteps.java:13)
+	at utilities.ElementUtils.doClick(ElementUtils.java:46)
+	at pageObjects.HomePage.clickLoginStart(HomePage.java:42)
+	at stepsDefinition.LoginPageSteps.user_is_on_login_page(LoginPageSteps.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -205,7 +263,7 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 </pre></div></td>
-<td>34</td>
+<td>28</td>
 <td>testRunners.ParallelRun@16f7c8c1</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -216,29 +274,24 @@ Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunners.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testRunners.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login successfully with default credentials", "Optional[Log in Clickcar]"</td>
-<td></td>
-<td>29</td>
-<td>testRunners.ParallelRun@16f7c8c1</td></tr>
-<tr>
-<td title='testRunners.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testRunners.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login with data driven file", "Optional[Log in Clickcar]"</td>
-<td></td>
-<td>34</td>
-<td>testRunners.ParallelRun@16f7c8c1</td></tr>
-<tr>
 <td title='testRunners.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testRunners.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login with specific credentials", "Optional[Log in Clickcar]"</td>
 <td></td>
-<td>30</td>
+<td>22</td>
+<td>testRunners.ParallelRun@16f7c8c1</td></tr>
+<tr>
+<td title='testRunners.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testRunners.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login successfully with default credentials", "Optional[Log in Clickcar]"</td>
+<td></td>
+<td>32</td>
 <td>testRunners.ParallelRun@16f7c8c1</td></tr>
 <tr>
 <td title='testRunners.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testRunners.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User can check Checklist", "Optional[Checklist features]"</td>
 <td></td>
-<td>28</td>
+<td>41</td>
 <td>testRunners.ParallelRun@16f7c8c1</td></tr>
 <tr>
-<td title='testRunners.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testRunners.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login with specific credentials", "Optional[Log in Clickcar]"</td>
+<td title='testRunners.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testRunners.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login with data driven file", "Optional[Log in Clickcar]"</td>
 <td></td>
-<td>20</td>
+<td>49</td>
 <td>testRunners.ParallelRun@16f7c8c1</td></tr>
 </table><p>
 </body>

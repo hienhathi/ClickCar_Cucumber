@@ -45,7 +45,7 @@ public class LoginPageSteps {
 	}	
 	
 	@Then("Verify that log in status is {string}")
-	public String verify_that_log_in_status_is(String loginStatus) throws InterruptedException {
+	public String verify_that_log_in_status_is(String loginStatus) {
 		String result = "Failed";
 		if (loginStatus.toLowerCase().equals("success")) {
 			Assert.assertFalse(loginPage.isLoginSuccess());

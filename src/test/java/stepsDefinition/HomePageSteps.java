@@ -5,7 +5,7 @@ import io.cucumber.java.en.*;
 import pageObjects.LoginPage;
 import pageObjects.CataloguePage;
 import pageObjects.HomePage;
-import common.CommonConst; 
+import common.CommonConst;
 
 public class HomePageSteps {
 	public LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
@@ -18,7 +18,8 @@ public class HomePageSteps {
 		homePage.clickLoginStart();
 		homePage.clickLogin();
 		loginPage.doLogin(CommonConst.DEFAULT_USERNAME, CommonConst.DEFAULT_PASSWORD);
-
+		loginPage.waitForLoginSuccessFully();
+		homePage.clickCloseChatFrame();
 	}
 	
 	@When("User go to Catalogue page")

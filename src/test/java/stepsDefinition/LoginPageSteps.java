@@ -56,9 +56,8 @@ public class LoginPageSteps {
 	}
 	
 	@Then("User login successfully")
-	public void user_login_successfully() throws InterruptedException {
-		Thread.sleep(1000);		
-		Boolean isDisplayed = DriverFactory.getDriver().findElements(By.xpath("(//button//*[text()='Login'])[2]")).size()>0;
+	public void user_login_successfully() throws InterruptedException {		
+		Boolean isDisplayed = loginPage.isLoginButtonDisplayed();
 		Assert.assertFalse(isDisplayed);
 	}
 	

@@ -27,10 +27,10 @@ public class HomePage {
 	private By btnBrowserCars = By.xpath("//p[text()='Browse cars']");
 	
 	By btnCloseChat = By.xpath("//div[@id='sp-close-frame']");
+	By btnSubmitChat = By.id("submitChat");
 	
 	public void clickCloseChatFrame() throws InterruptedException {
-//		Thread.sleep(1000);
-		if (driver.findElements(btnCloseChat).size() > 0) {
+		if (driver.findElements(btnSubmitChat).size() > 0) {
 			elementUtils.doClick(btnCloseChat);
 		}
 	}

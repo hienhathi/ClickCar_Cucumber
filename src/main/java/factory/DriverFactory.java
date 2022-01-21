@@ -37,10 +37,11 @@ public class DriverFactory {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
 	        options.addArguments("window-size=1366,768");
-			options.addArguments("--disable-gpu");
-			options.setPageLoadStrategy(PageLoadStrategy.EAGER);
-			WebDriverManager.chromedriver().forceDownload().setup();
-//			WebDriverManager.chromedriver().setup();
+//			options.addArguments("--disable-gpu");
+//			options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+	        options.addArguments("enable-automation");
+//			WebDriverManager.chromedriver().forceDownload().setup();
+			WebDriverManager.chromedriver().setup();
 	        tlDriver.set(new ChromeDriver(options));
 	        
 		} else if (browser.toLowerCase().equals("firefox")) {

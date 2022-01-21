@@ -53,7 +53,7 @@ public class LoginPage {
 		return elementUtils.getText(lbErrorMessage);
 	}
 	
-	public Boolean isLoginSuccess(){
+	public Boolean waitForLoginSuccessFully(){
 		elementUtils.waitForElementPresent(btnProfile);
 		return elementUtils.isElementPresent(btnProfile);
 	}
@@ -64,5 +64,11 @@ public class LoginPage {
 		isTrue = elementUtils.isElementDisplayed(btnLogin) 
 				&& errMessage.contains(Message.LOGIN_EMAIL_OR_PASSWORD_IS_INCORRECT);
 		return isTrue;
-	}	
+	}
+	
+	public Boolean isLoginButtonDisplayed() throws InterruptedException {
+		Thread.sleep(1000);		
+		Boolean isDisplayed = DriverFactory.getDriver().findElements(btnLogin).size()>0;
+		return isDisplayed;
+	}
 }

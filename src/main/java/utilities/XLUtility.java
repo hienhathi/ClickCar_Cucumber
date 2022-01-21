@@ -26,6 +26,7 @@ public class XLUtility {
 	public XSSFCell cell;
 	public CellStyle style; 
 	String path;
+	String output_path;
 	String fileName; 
 	String sheetName;
 
@@ -36,6 +37,7 @@ public class XLUtility {
 		this.fileName = fileName;
 		this.sheetName = sheetName;
 		path = prop.getProperty("testDatafolder") + fileName;
+		output_path = prop.getProperty("outputTestDatafolder") + fileName;
 	}
 	
 	public ArrayList<List<String>> getData() throws IOException
@@ -194,7 +196,7 @@ public class XLUtility {
 			}
 		}	
 	      
-		String filePath=path.replace(".xlsx", "") + "_result.xlsx";
+		String filePath=output_path.replace(".xlsx", "") + "_result.xlsx";
 		FileOutputStream outstream=new FileOutputStream(filePath, false);
 		workbook.write(outstream);		
 		outstream.close();

@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Test</title>
+<title>TestNG:  Surefire test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Test</h2><table border='1' align="center">
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 20 14:47:19 ICT 2022</td>
+<td>Started on:</td><td>Fri Jan 21 10:33:13 ICT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>34 seconds (34352 ms)</td>
+<tr><td>Total time:</td><td>38 seconds (38276 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -79,7 +79,7 @@ function toggleAllBoxes() {
 <td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[text()=&apos;Take me back home&apos;]/parent::button (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:98)
+	at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:101)
 	at pageObjects.CheckoutPage.isPageDisplayed(CheckoutPage.java:22)
 	at stepsDefinition.CheckoutPageSteps.check_out_page_is_displayed(CheckoutPageSteps.java:13)
 	at ?.Verify check out page is displayed(file:///C:/Users/hienht/eclipse-workspace/QAClickcar/src/test/resources/features/CheckoutPage.feature:13)
@@ -89,9 +89,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
 System info: host: &apos;FCA-00019&apos;, ip: &apos;192.168.16.179&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d38aa95d614c9c129900342b9d57d485, findElement {using=xpath, value=//span[text()=&apos;Take me back home&apos;]/parent::button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58922}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58922/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d38aa95d614c9c129900342b9d57d485
+Command: [b67c2c590f75c6bbbef3a58d838dbdce, findElement {using=xpath, value=//span[text()=&apos;Take me back home&apos;]/parent::button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57876}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57876/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -106,7 +106,7 @@ Session ID: d38aa95d614c9c129900342b9d57d485
 	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
 	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:98)
+	at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:101)
 	at pageObjects.CheckoutPage.isPageDisplayed(CheckoutPage.java:22)
 	at stepsDefinition.CheckoutPageSteps.check_out_page_is_displayed(CheckoutPageSteps.java:13)
 	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
@@ -131,11 +131,11 @@ Session ID: d38aa95d614c9c129900342b9d57d485
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2036788290", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2036788290'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[text()=&apos;Take me back home&apos;]/parent::button (tried for 10 second(s) with 500 milliseconds interval)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace518810372", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace518810372'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[text()=&apos;Take me back home&apos;]/parent::button (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:98)
+	at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:101)
 	at pageObjects.CheckoutPage.isPageDisplayed(CheckoutPage.java:22)
 	at stepsDefinition.CheckoutPageSteps.check_out_page_is_displayed(CheckoutPageSteps.java:13)
 	at ?.Verify check out page is displayed(file:///C:/Users/hienht/eclipse-workspace/QAClickcar/src/test/resources/features/CheckoutPage.feature:13)
@@ -145,9 +145,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
 System info: host: &apos;FCA-00019&apos;, ip: &apos;192.168.16.179&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d38aa95d614c9c129900342b9d57d485, findElement {using=xpath, value=//span[text()=&apos;Take me back home&apos;]/parent::button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58922}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58922/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d38aa95d614c9c129900342b9d57d485
+Command: [b67c2c590f75c6bbbef3a58d838dbdce, findElement {using=xpath, value=//span[text()=&apos;Take me back home&apos;]/parent::button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57876}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57876/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -166,7 +166,7 @@ Session ID: d38aa95d614c9c129900342b9d57d485
 	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
 	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:98)
+	at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:101)
 	at pageObjects.CheckoutPage.isPageDisplayed(CheckoutPage.java:22)
 	at stepsDefinition.CheckoutPageSteps.check_out_page_is_displayed(CheckoutPageSteps.java:13)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -205,8 +205,8 @@ Session ID: d38aa95d614c9c129900342b9d57d485
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 </pre></div></td>
-<td>31</td>
-<td>testRunners.ParallelRun@31f924f5</td></tr>
+<td>34</td>
+<td>testRunners.ParallelRun@16f7c8c1</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -216,30 +216,30 @@ Session ID: d38aa95d614c9c129900342b9d57d485
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunners.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testRunners.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login with specific credentials", "Optional[Log in Clickcar]"</td>
+<td title='testRunners.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testRunners.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login successfully with default credentials", "Optional[Log in Clickcar]"</td>
 <td></td>
-<td>16</td>
-<td>testRunners.ParallelRun@31f924f5</td></tr>
+<td>29</td>
+<td>testRunners.ParallelRun@16f7c8c1</td></tr>
 <tr>
 <td title='testRunners.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testRunners.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login with data driven file", "Optional[Log in Clickcar]"</td>
 <td></td>
-<td>20</td>
-<td>testRunners.ParallelRun@31f924f5</td></tr>
+<td>34</td>
+<td>testRunners.ParallelRun@16f7c8c1</td></tr>
 <tr>
 <td title='testRunners.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testRunners.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login with specific credentials", "Optional[Log in Clickcar]"</td>
 <td></td>
-<td>15</td>
-<td>testRunners.ParallelRun@31f924f5</td></tr>
-<tr>
-<td title='testRunners.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testRunners.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login successfully with default credentials", "Optional[Log in Clickcar]"</td>
-<td></td>
-<td>26</td>
-<td>testRunners.ParallelRun@31f924f5</td></tr>
+<td>30</td>
+<td>testRunners.ParallelRun@16f7c8c1</td></tr>
 <tr>
 <td title='testRunners.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testRunners.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User can check Checklist", "Optional[Checklist features]"</td>
 <td></td>
-<td>26</td>
-<td>testRunners.ParallelRun@31f924f5</td></tr>
+<td>28</td>
+<td>testRunners.ParallelRun@16f7c8c1</td></tr>
+<tr>
+<td title='testRunners.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testRunners.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login with specific credentials", "Optional[Log in Clickcar]"</td>
+<td></td>
+<td>20</td>
+<td>testRunners.ParallelRun@16f7c8c1</td></tr>
 </table><p>
 </body>
 </html>

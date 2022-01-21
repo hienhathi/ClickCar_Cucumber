@@ -21,11 +21,10 @@ Feature: Log in Clickcar
       | hoangnd1@smartosc.com | Hoang123  | Success |
       | hoangnd1@smartosc.com | Hoang1234 | Failed  |
 
-	# Refresh project and check test data folder with file *_result to verify test results
+	# Refresh project and check test-output folder with file *_result to verify test results
   @data-file
   Scenario Outline: User login with data driven file
     When User login with data from excel with file name "<fileName>" and sheet name "<sheetName>"
-    Then Data result file is generated successfully with file name "<fileName>"_result and sheet name "<sheetName>"
     Examples: 
       | fileName       | sheetName |
       | loginData.xlsx | Sheet1    |

@@ -1,12 +1,15 @@
 package appHooks;
 
 import java.util.Properties;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import factory.DriverFactory;
 import utilities.ConfigReader;
+import utilities.ElementUtils;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -41,6 +44,7 @@ public class ApplicationHooks {
 		String driverUrl = urlParamFromEnv == null ? configUrl : urlParamFromEnv;
 		driver.get(driverUrl);
 		driver.navigate().refresh();
+		
 	}
 
 	@After(order = 0)

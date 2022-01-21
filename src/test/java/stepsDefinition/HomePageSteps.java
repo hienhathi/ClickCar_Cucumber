@@ -14,7 +14,7 @@ public class HomePageSteps {
 //	private ProductDetailPage productDetailPage = new ProductDetailPage(DriverFactory.getDriver());
 	
 	@Given("User login successfully with default credentials")
-	public void user_login_successfully_with_default_credentials() {
+	public void user_login_successfully_with_default_credentials() throws InterruptedException {
 		homePage.clickLoginStart();
 		homePage.clickLogin();
 		loginPage.doLogin(CommonConst.DEFAULT_USERNAME, CommonConst.DEFAULT_PASSWORD);

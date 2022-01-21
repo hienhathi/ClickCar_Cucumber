@@ -39,15 +39,15 @@ public class DriverFactory {
 	        options.addArguments("window-size=1366,768");
 			options.addArguments("--disable-gpu");
 			options.addArguments("enable-features=NetworkServiceInProcess");
-			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-			WebDriverManager.chromedriver().forceDownload().setup();
+			WebDriverManager.chromedriver().setup();
 	        tlDriver.set(new ChromeDriver(options));
 	        
 		} else if (browser.toLowerCase().equals("firefox")) {
 			FirefoxOptions options = new FirefoxOptions();
 			options.addArguments("--headless");
 	        options.addArguments("window-size=1366,768");
-			options.addArguments("--disable-gpu");			
+			options.addArguments("--disable-gpu");	
+			options.addArguments("enable-features=NetworkServiceInProcess");		
 			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);			
 			WebDriverManager.firefoxdriver().setup();
 	        tlDriver.set(new FirefoxDriver(options));

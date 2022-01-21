@@ -25,7 +25,7 @@ public class LoginPage {
 	private By btnSignout = By.xpath("//div[text()='Sign out']");
 	public void logout() {
 		elementUtils.doClick(btnProfile);
-		elementUtils.doClick(btnSignout);		
+		elementUtils.doClick(btnSignout);	
 	}
 	public void inputEmail(String email) {	
 		elementUtils.doSendKeys(txtEmail, email);
@@ -54,8 +54,8 @@ public class LoginPage {
 	}
 	
 	public Boolean isLoginSuccess(){
-		elementUtils.waitForElementNotVisible(btnLogin);
-		return elementUtils.isElementBehind(btnLogin);
+		elementUtils.waitForElementPresent(btnProfile);
+		return elementUtils.isElementPresent(btnProfile);
 	}
 	
 	public Boolean isLoginFailed() {

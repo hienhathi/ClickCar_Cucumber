@@ -84,6 +84,9 @@ public class ElementUtils {
 	public boolean isElementDisplayed(By locator) {
 		return getElement(locator).isDisplayed();
 	}
+	public boolean isElementPresent(By locator) {
+		return driver.findElements(locator).size() > 0;
+	}
 	
 	public boolean isElementBehind(By locator) {
 		List<WebElement> eles = driver.findElements(locator);

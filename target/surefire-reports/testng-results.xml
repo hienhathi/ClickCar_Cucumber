@@ -2,19 +2,51 @@
 <testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="34352" started-at="2022-01-20T14:47:19 ICT" finished-at="2022-01-20T14:47:53 ICT">
+  <suite name="Surefire suite" duration-ms="38276" started-at="2022-01-21T10:33:13 ICT" finished-at="2022-01-21T10:33:52 ICT">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@31f924f5]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="34352" started-at="2022-01-20T14:47:19 ICT" finished-at="2022-01-20T14:47:53 ICT">
+    <test name="Surefire test" duration-ms="38276" started-at="2022-01-21T10:33:13 ICT" finished-at="2022-01-21T10:33:52 ICT">
       <class name="testRunners.ParallelRun">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunners.ParallelRun@31f924f5]" name="setUpClass" is-config="true" duration-ms="484" started-at="2022-01-20T14:47:19 ICT" finished-at="2022-01-20T14:47:20 ICT">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="setUpClass" is-config="true" duration-ms="487" started-at="2022-01-21T10:33:13 ICT" finished-at="2022-01-21T10:33:14 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@31f924f5]" name="runScenario" duration-ms="16067" started-at="2022-01-20T14:47:20 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-20T14:47:36 ICT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="29902" started-at="2022-01-21T10:33:14 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T10:33:44 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User login successfully with default credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Log in Clickcar]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="34711" started-at="2022-01-21T10:33:14 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T10:33:49 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User login with data driven file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Log in Clickcar]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="30144" started-at="2022-01-21T10:33:14 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T10:33:44 ICT">
           <params>
             <param index="0">
               <value>
@@ -30,7 +62,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@31f924f5]" name="runScenario" duration-ms="31877" started-at="2022-01-20T14:47:20 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-20T14:47:51 ICT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="28151" started-at="2022-01-21T10:33:14 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T10:33:42 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can check Checklist"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Checklist features]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="34404" started-at="2022-01-21T10:33:14 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T10:33:48 ICT">
           <params>
             <param index="0">
               <value>
@@ -51,7 +99,7 @@
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[text()='Take me back home']/parent::button (tried for 10 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:98)
+at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:101)
 at pageObjects.CheckoutPage.isPageDisplayed(CheckoutPage.java:22)
 at stepsDefinition.CheckoutPageSteps.check_out_page_is_displayed(CheckoutPageSteps.java:13)
 at ✽.Verify check out page is displayed(file:///C:/Users/hienht/eclipse-workspace/QAClickcar/src/test/resources/features/CheckoutPage.feature:13)
@@ -61,9 +109,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'FCA-00019', ip: '192.168.16.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d38aa95d614c9c129900342b9d57d485, findElement {using=xpath, value=//span[text()='Take me back home']/parent::button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58922}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58922/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d38aa95d614c9c129900342b9d57d485
+Command: [b67c2c590f75c6bbbef3a58d838dbdce, findElement {using=xpath, value=//span[text()='Take me back home']/parent::button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hienht\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57876}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57876/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b67c2c590f75c6bbbef3a58d838dbdce
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -82,7 +130,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
 at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:98)
+at utilities.ElementUtils.waitForElementPresent(ElementUtils.java:101)
 at pageObjects.CheckoutPage.isPageDisplayed(CheckoutPage.java:22)
 at stepsDefinition.CheckoutPageSteps.check_out_page_is_displayed(CheckoutPageSteps.java:13)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -126,23 +174,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@31f924f5]" name="runScenario" duration-ms="20386" started-at="2022-01-20T14:47:20 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-20T14:47:40 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User login with data driven file"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Log in Clickcar]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@31f924f5]" name="runScenario" duration-ms="15822" started-at="2022-01-20T14:47:20 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-20T14:47:35 ICT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="runScenario" duration-ms="20762" started-at="2022-01-21T10:33:14 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-21T10:33:35 ICT">
           <params>
             <param index="0">
               <value>
@@ -158,43 +190,11 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@31f924f5]" name="runScenario" duration-ms="26625" started-at="2022-01-20T14:47:20 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-20T14:47:46 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User login successfully with default credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Log in Clickcar]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ParallelRun@31f924f5]" name="runScenario" duration-ms="26390" started-at="2022-01-20T14:47:20 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-20T14:47:46 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User can check Checklist"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Checklist features]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.ParallelRun@31f924f5]" name="tearDownClass" is-config="true" duration-ms="1943" started-at="2022-01-20T14:47:51 ICT" finished-at="2022-01-20T14:47:53 ICT">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.ParallelRun@16f7c8c1]" name="tearDownClass" is-config="true" duration-ms="3047" started-at="2022-01-21T10:33:49 ICT" finished-at="2022-01-21T10:33:52 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- testRunners.ParallelRun -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

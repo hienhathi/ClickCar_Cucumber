@@ -43,7 +43,6 @@ public class ApplicationHooks {
 		String urlParamFromEnv = System.getProperty("URL");
 		String driverUrl = urlParamFromEnv == null ? configUrl : urlParamFromEnv;
 		driver.get(driverUrl);
-		driver.navigate().refresh();
 		
 	}
 

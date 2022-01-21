@@ -57,9 +57,7 @@ public class DriverFactory {
 		} else if (browser.toLowerCase().equals("edge")) {	
 			EdgeOptions options = new EdgeOptions();
 			options.addArguments("--headless");
-	        options.addArguments("window-size=1366,768");
-			options.addArguments("--disable-gpu");
-			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);		
+	        options.addArguments("window-size=1366,768");		
 			WebDriverManager.edgedriver().setup();
 	        tlDriver.set(new EdgeDriver(options));
 	        

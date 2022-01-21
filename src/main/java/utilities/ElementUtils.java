@@ -161,7 +161,8 @@ public class ElementUtils {
 		}
 		for (int i = 0; i < CommonConst.PAGE_LOAD_TIMEOUT; i++) {
 			try {
-				Thread.sleep(1000);
+				driver.navigate().refresh();
+				Thread.sleep(2000);
 			} catch (InterruptedException e) {
 			}
 			// To check page ready state.

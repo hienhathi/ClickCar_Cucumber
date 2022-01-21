@@ -37,10 +37,7 @@ public class DriverFactory {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
 	        options.addArguments("window-size=1366,768");
-//			options.addArguments("--disable-gpu");
-//			options.setPageLoadStrategy(PageLoadStrategy.EAGER);
 	        options.addArguments("enable-automation");
-//			WebDriverManager.chromedriver().forceDownload().setup();
 			WebDriverManager.chromedriver().setup();
 	        tlDriver.set(new ChromeDriver(options));
 	        
@@ -48,16 +45,15 @@ public class DriverFactory {
 			FirefoxOptions options = new FirefoxOptions();
 			options.addArguments("--headless");
 	        options.addArguments("window-size=1366,768");
-			options.addArguments("--disable-gpu");	
-			options.addArguments("enable-features=NetworkServiceInProcess");		
-			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);			
+	        options.addArguments("enable-automation");					
 			WebDriverManager.firefoxdriver().setup();
 	        tlDriver.set(new FirefoxDriver(options));
 	        
 		} else if (browser.toLowerCase().equals("edge")) {	
 			EdgeOptions options = new EdgeOptions();
 			options.addArguments("--headless");
-	        options.addArguments("window-size=1366,768");		
+	        options.addArguments("window-size=1366,768");
+	        options.addArguments("enable-automation");		
 			WebDriverManager.edgedriver().setup();
 	        tlDriver.set(new EdgeDriver(options));
 	        

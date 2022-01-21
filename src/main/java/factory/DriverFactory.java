@@ -39,7 +39,8 @@ public class DriverFactory {
 	        options.addArguments("window-size=1366,768");
 			options.addArguments("--disable-gpu");
 			options.addArguments("enable-features=NetworkServiceInProcess");
-			WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().forceDownload().setup();
+//			WebDriverManager.chromedriver().setup();
 	        tlDriver.set(new ChromeDriver(options));
 	        
 		} else if (browser.toLowerCase().equals("firefox")) {
